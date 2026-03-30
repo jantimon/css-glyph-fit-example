@@ -9,6 +9,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.swc
 
 # testing
 /coverage
@@ -16,6 +17,7 @@
 # next.js
 /.next/
 /out/
+/docs/dev/
 
 # production
 /build

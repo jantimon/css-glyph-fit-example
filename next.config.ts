@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
+import { withYak } from "next-yak/withYak";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
+  output: "export",
+  distDir: "docs",
+  basePath: "/css-glyph-fit-example",
 };
 
-export default nextConfig;
+export default withYak(nextConfig);
