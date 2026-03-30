@@ -2,7 +2,9 @@
 
 Scalable headings that perfectly fill the viewport width — computed from actual font glyph metrics at build time, with zero runtime JavaScript.
 
-Inspired by [Devon Govett's technique](https://x.com/devongovett/status/2038312787362087055) used on the React Aria website, where he used [fontkit](https://github.com/foliojs/fontkit) to measure heading widths in "em" units and CSS `clamp()` to make them scale fluidly.
+Inspired by [Devon Govett's technique](https://x.com/devongovett/status/2038312787362087055) used on the React Aria website, where he used [fontkit](https://github.com/foliojs/fontkit) to measure heading widths in "em" units and CSS `clamp()` to make them scale fluidly
+
+![Preview](https://github.com/user-attachments/assets/81996014-1499-4cd9-85b4-122e3aeda597)
 
 1. A [`.yak.ts` token file](components/typography/typography.yak.ts) runs at build time via [next-yak](https://yak.js.org)'s evaluator (full Node.js context)
 2. [fontkit](https://github.com/foliojs/fontkit) opens the actual font file and measures each headline's glyph advance width in em units
