@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "trash docs && next build && touch docs/.nojekyll",
     "start": "next start",
     "serve": "http-server docs -o"
   },
